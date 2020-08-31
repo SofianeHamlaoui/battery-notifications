@@ -8,9 +8,6 @@ here you find some good articles about this :
 
 2 - [Quora Article explaining what is the 40-80 rule](https://www.quora.com/What-is-40-80-rule-for-lithium-ion-batteries)
 
-
-![preview](http://i.imgur.com/rVGMBK8.png)
-
 # Battery Notification sound 
 
 After searching for some alarm sounds, on Github : ```alarm, :.oga```.
@@ -18,15 +15,15 @@ After searching for some alarm sounds, on Github : ```alarm, :.oga```.
 I found that a lot of people use `alarm-clock-elapsed.oga` located at `/usr/share/sounds/freedesktop/stereo/`
 you can always change the sound file as you wish.
 
+# Screenshots :
+
+![preview](http://i.imgur.com/rVGMBK8.png)
+
 ## Installation :
 
-1. Install `acpi` package :
-
-        sudo apt-get install acpi
-
-2. Clone this repo :
+1. Clone this repo :
         
-        git clone https://github.com/hg8/battery-full-notification.git
+        git clone https://github.com/SofianeHamlaoui/battery-notifications.git
         
 3. Add the `batteryfull.sh` script as a startup application (Open Dash and search for `Startup Applications`) :
 
