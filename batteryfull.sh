@@ -4,21 +4,27 @@
 
 # making a notif function 
 
-notify_me () {
-	notify-send -u critical -t 0 -i "$PWD/batteryfull.png" "$1" "Level : $2%"
+notify_me_full () {
+	notify-send -u critical -t 0 -i "$PWD/icons/battery-full-charging.svg" "$1" "Level : $2%"
 	paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
 }
+
+notify_me_low () {
+        notify-send -u critical -t 0 -i "$PWD/icons/battery-low.svg" "$1" "Level : $2%"
+        paplay /usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga
+}
+
 
 while true
 do
     export DISPLAY=:0.0
     battery_percent=$(cat /sys/class/power_supply/BAT0/capacity)
     if on_ac_power; then
-        if [ $battery_percent -gt 94 ]; then
-		notify_me "You can unplug the charger now! the battery is almost full" $battery_percent
+        if [ $battery_percent -gt 96 ]; then
+		notify_me_full "You can unplug the charger now! the battery is almost full" $battery_percent
         fi
-    elif [ $battery_percent -lt 92 ]; then
-	notify_me "Plug the charger. Battery level is low, and that's not good" $battery_percent
+    elif [ $battery_percent -lt 20 ]; then
+	notify_me_low "Plug the charger. Battery level is low, and that's not good" $battery_percent
     fi
     sleep 240 # 4 minutes
 done
