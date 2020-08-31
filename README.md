@@ -25,7 +25,7 @@ you can always change the sound file as you wish.
         
         git clone https://github.com/SofianeHamlaoui/battery-notifications.git
         
-3. Add the `batteryfull.sh` script as a startup application (Open Dash and search for `Startup Applications`) :
+3. Add the `batterynotif.sh` script as a startup application (Open Dash and search for `Startup Applications`) :
 
     ![startup application](http://i.imgur.com/pWcq9TW.png)
 
