@@ -17,6 +17,8 @@ do
         if [ $battery_percent -gt 94 ]; then
 		notify_me "You can unplug the charger now! the battery is almost full" $battery_percent
         fi
+    elif [ $battery_percent -lt 92 ]; then
+	notify_me "Plug the charger. Battery level is low, and that's not good" $battery_percent
     fi
     sleep 240 # 4 minutes
 done
