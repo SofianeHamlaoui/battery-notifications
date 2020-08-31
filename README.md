@@ -1,4 +1,4 @@
-# Battery Full Notification
+# Battery State Notifications ( Indicator ) 
 
 A simple script to display a notification using [notify-send](https://ss64.com/bash/notify-send.html) when your battery is almost full or low.
 this script will warn you and try to keep your battery level at the range of ~40-80, according to the 40-80 rule for for lithium ion batteries
