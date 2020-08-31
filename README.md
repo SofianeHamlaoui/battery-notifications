@@ -3,8 +3,10 @@ A simple script to display a notification when your battery is full in Ubuntu/Li
 
 ![preview](http://i.imgur.com/rVGMBK8.png)
 # Battery notification sound 
-After searching for some alarm sounds, on Github : ```alarm, :.oga``` I found that a lot of people use
-`alarm-clock-elapsed.oga` located at `/usr/share/sounds/freedesktop/stereo/`
+After searching for some alarm sounds, on Github : 
+```alarm, :.oga```
+I found that a lot of people use `alarm-clock-elapsed.oga` located at `/usr/share/sounds/freedesktop/stereo/`
+you can always change the sound file as you wish
 
 ## Installation :
 
