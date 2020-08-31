@@ -1,8 +1,18 @@
 #!/usr/bin/env bash
 
+# Using a PID file 
 
+cd $(dirname $0)
+PIDFILE=$(basename $0 .sh).pid
 
-# making a notif function 
+if [ -f $PIDFILE ]; then
+  if [ -e /proc/$(cat $PIDFILE) ]; then
+    exit 0
+  fi
+fi
+echo $BASHPID > $PIDFILE
+
+# Making a function for each Notification type 
 
 notify_me_full () {
 	notify-send -u critical -t 0 -i "$PWD/icons/battery-full-charging.svg" "$1" "Level : $2%"
