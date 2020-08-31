@@ -17,7 +17,11 @@ you can always change the sound file as you wish.
 
 # Screenshots :
 
-![preview](http://i.imgur.com/rVGMBK8.png)
+### Full :
+![preview](https://i.imgur.com/pf27u7w.png)
+
+### Low :
+![preview](https://i.imgur.com/zLqcAFj.png)
 
 ## Installation :
 
