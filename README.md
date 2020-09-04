@@ -32,11 +32,18 @@ you can always change the sound file as you wish.
         
         git clone https://github.com/SofianeHamlaoui/battery-notifications.git
         
-3. Add the `batterynotif.sh` script as a startup application (Open Dash and search for `Startup Applications`) :
+        
+2. Run the following commands : 
 
-    ![startup application](http://i.imgur.com/pWcq9TW.png)
+```
+$ cd battery-notifications && mkdir /usr/bin/batterynotif && cp batterynotif /usr/bin/batterynotif/batterynotif
+```
+3. Add this to your i3 config file
 
-4. Done!
+```
+exec_always --no-startup-id exec batterynotif
+```
+
 
 
 ----
