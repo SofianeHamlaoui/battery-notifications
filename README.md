@@ -7,7 +7,10 @@ here you find some good articles about this :
 1 - [CSmonitor Article](https://www.csmonitor.com/Technology/Tech/2014/0103/40-80-rule-New-tip-for-extending-battery-life)
 
 2 - [Quora Article explaining what is the 40-80 rule](https://www.quora.com/What-is-40-80-rule-for-lithium-ion-batteries)
-
+# Requirements : 
+```
+pm-utils
+```
 # Battery Notification sound 
 
 After searching for some alarm sounds, on Github : ```alarm, :.oga```.
